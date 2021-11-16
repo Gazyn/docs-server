@@ -17,13 +17,16 @@ try {
 app.use(express.json());
 
 // Loads .env file contents into process.env
-require("dotenv").config()
+//require("dotenv").config()
 
 // Register routes
+/*
 app.use('/users', require('./routes/users'))
 app.use('/sessions', require('./routes/sessions'))
+*/
 
 // Open connection to MongoDB
+/*
 mongoose.connect(process.env.MONGODB_URL, function (err) {
     if (err)
         console.log(err);
@@ -31,8 +34,9 @@ mongoose.connect(process.env.MONGODB_URL, function (err) {
     console.log("Connected to Mongo")
 
 })
+*/
 
 // Listen for connections
-app.listen(process.env.PORT, () => {
-    console.log(`App listening at http://localhost:${process.env.PORT}`)
+app.listen(8080, () => {
+    console.log(`App listening at port 8080`)
 })
