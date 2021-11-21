@@ -1,9 +1,0 @@
-runtime: nodejs16
-
-instance_class: F1
-
-inbound_services:
- - node index
-
-handlers:
- - url: /
